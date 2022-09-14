@@ -228,7 +228,7 @@ function esPrimo(numero) {
       contadorDivisibles++;
     }
   }
-  if (contadorDivisibles > 2) {
+  if (contadorDivisibles > 2 || numero == 0 || numero == 1) {
     return false;
   } else {
     return true;
