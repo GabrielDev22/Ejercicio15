@@ -1,4 +1,4 @@
-/* function obtenerMayor(x, y) {
+function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
@@ -210,7 +210,7 @@ function operadoresLogicos(num1, num2, num3) {
     return "false";
   }
 }
-console.log(operadoresLogicos()); */
+console.log(operadoresLogicos());
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -239,7 +239,7 @@ console.log(`El 7 es primo ? - Rta: ${esPrimo(7)}`);
 console.log(`El 4 es primo ? - Rta: ${esPrimo(4)}`);
 console.log(`El 47 es primo ? - Rta: ${esPrimo(47)}`);
 console.log(`El 48 es primo ? - Rta: ${esPrimo(48)}`);
-/* 
+
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero”
   //si su valor es true y “Soy falso” si su valor es false.
@@ -263,4 +263,3 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   // Tu código:
 }
- */
