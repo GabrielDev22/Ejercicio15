@@ -245,37 +245,50 @@ function esVerdadero(valor) {
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-  if (valor === true){
-    return "Soy verdadero"
+  if (valor === true) {
+    return "Soy verdadero";
   } else {
-    return "Soy falso"
+    return "Soy falso";
   }
 }
 
-console.log(esVerdadero(true))
-console.log(esVerdadero(false))
+console.log(esVerdadero(true));
+console.log(esVerdadero(false));
 
 function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
 
-  let vectorDelSeis = [] 
- 
+  let vectorDelSeis = [];
+
   for (let i = 0; i < 11; i++) {
-      vectorDelSeis.push(i*6)
+    vectorDelSeis.push(i * 6);
   }
 
-  return vectorDelSeis 
+  return vectorDelSeis;
 }
 
-console.log(tablaDelSeis())
-
+console.log(tablaDelSeis());
 
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
+  let numString = numero.toString();
+
+  numLength = numString.length;
+
+  if (numLength === 3) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(`El 45 tiene 3 digitos ? - Rta: ${tieneTresDigitos(45)}`);
+console.log(`El 580 tiene 3 digitos ? - Rta: ${tieneTresDigitos(580)}`);
+console.log(`El 45555 tiene 3 digitos ? - Rta: ${tieneTresDigitos(45555)}`);
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
