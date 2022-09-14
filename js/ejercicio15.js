@@ -222,8 +222,6 @@ function esPrimo(numero) {
   let contadorDivisibles = 0;
 
   for (let i = numero; i > 0; i--) {
-    //console.log(i);
-    //console.log(numero % i);
     if (numero % i == 0) {
       contadorDivisibles++;
     }
@@ -239,12 +237,23 @@ console.log(`El 7 es primo ? - Rta: ${esPrimo(7)}`);
 console.log(`El 4 es primo ? - Rta: ${esPrimo(4)}`);
 console.log(`El 47 es primo ? - Rta: ${esPrimo(47)}`);
 console.log(`El 48 es primo ? - Rta: ${esPrimo(48)}`);
+console.log(`El 0 es primo ? - Rta: ${esPrimo(0)}`);
+console.log(`El 1 es primo ? - Rta: ${esPrimo(1)}`);
 
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero”
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+
+  if (valor === true){
+    return "Soy verdadero"
+  } else {
+    return "Soy falso"
+  }
 }
+
+console.log(esVerdadero(true))
+console.log(esVerdadero(false))
 
 function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
