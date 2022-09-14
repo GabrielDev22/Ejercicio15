@@ -219,16 +219,16 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-  let contDivisibles = 0;
+  let contadorDivisibles = 0;
 
   for (let i = numero; i > 0; i--) {
     //console.log(i);
     //console.log(numero % i);
     if (numero % i == 0) {
-      contDivisibles++;
+      contadorDivisibles++;
     }
   }
-  if (contDivisibles > 2) {
+  if (contadorDivisibles > 2) {
     return false;
   } else {
     return true;
