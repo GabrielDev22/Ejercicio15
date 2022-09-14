@@ -295,4 +295,13 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   // Tu código:
+
+  let i = 1
+
+  do {
+    numero = numero + 5
+    i++
+  } while (i < 9)
 }
+
+console.log(doWhile(1))
