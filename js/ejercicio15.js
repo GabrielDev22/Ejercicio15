@@ -155,17 +155,17 @@ function obtenerMayor(x, y) {
       let parteEntera = parseInt(vectorNum[0]);
       let parteDecimal = parseInt(vectorNum[1]);
   
-      if (parteEntera !== 0 && parteDecimal) {
+      if ((parteEntera !== 0 && parteDecimal) || parteEntera === 0) {
           return false
       } else {
           return true
       }
   }
   
-  
   console.log(`con 2 es ${esEntero(2)}`)
   console.log(`con 2.56 es ${esEntero(2.56)}`)
   console.log(`con -5.6 es ${esEntero(-5.3)}`)
+  console.log(`con 0.6 es ${esEntero(0.6)}`)
   
 
   function fizzBuzz(numero) {
