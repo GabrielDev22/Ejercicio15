@@ -148,10 +148,26 @@ function obtenerMayor(x, y) {
     // Pista: Puedes resolver esto usando `Math.floor`
     // Tu código:
 
+      let numString = numero.toString()
+  
+      let vectorNum = numString.split('.')
+      
+      let parteEntera = parseInt(vectorNum[0]);
+      let parteDecimal = parseInt(vectorNum[1]);
+  
+      if (parteEntera !== 0 && parteDecimal) {
+          return false
+      } else {
+          return true
+      }
   }
- 
   
   
+  console.log(`con 2 es ${esEntero(2)}`)
+  console.log(`con 2.56 es ${esEntero(2.56)}`)
+  console.log(`con -5.6 es ${esEntero(-5.3)}`)
+  
+
   function fizzBuzz(numero) {
     // Si "numero" es divisible entre 3, devuelve "fizz"
     // Si "numero" es divisible entre 5, devuelve "buzz"
